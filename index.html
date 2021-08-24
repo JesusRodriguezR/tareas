@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <head>
-    <title>
+   
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<title>
+        Calculadora
     </title>
 </head>
-<body>
-    calculadora
-</body>
 
+<body>  
+    <div class="d-flex justify-content-center">
+    <div class="w-25 p-3">
+        A <input type="number" id = "dato" class="form-control"> 
+    </div><br>
+    </div>
+    <div id = "opts" class="d-flex justify-content-center">
+        <button id = "add" onclick="add()" type="button" class="btn btn-primary">+</button>
+        <button id = "sub" onclick="sub()" type="button" class="btn btn-primary">-</button>
+        <button id = "div" onclick="div()" type="button" class="btn btn-primary">&divide;</button>
+        <button id = "mul" onclick="mul()" type="button" class="btn btn-primary">x</button>
+        <button id = "sqr" onclick="sqr()" type="button" class="btn btn-primary">x&sup2;</button>
+        <button id = "rot" onclick="rot()" type="button" class="btn btn-primary">x&frac12;</button>
+        <button id = "pwr" onclick="pwr()" type="button" class="btn btn-primary">x<sup>y</sup></button>
+        <button id = "clr" onclick="clr()" type="button" class="btn btn-primary">C</button>   
+    </div><br>
+
+    <div class="d-flex justify-content-center">
+    <div class="w-25 p-3">
+       B<input type="number" id = "dato2" class="form-control"> 
+    </div>
+    </div>
+    <div class="d-flex justify-content-center">
+    <div class="w-25 p-3">        
+    Resultado
+    <table id = "resultado" border = 1 class="table">
+        <th>0</th>
+    </table>    
+    </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+<style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    </style>
 </html>
 
