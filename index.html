@@ -12,7 +12,7 @@
 <body>  
     <div class="d-flex justify-content-center">
     <div class="w-25 p-3">
-        A <input type="number" id = "dato" class="form-control"> 
+        A <input type="number" id = "dato" class="form-control" value = 0 onclick = "this.select()">  
     </div><br>
     </div>
     <div id = "opts" class="d-flex justify-content-center">
@@ -24,11 +24,11 @@
         <button id = "rot" onclick="rot()" type="button" class="btn btn-primary">x&frac12;</button>
         <button id = "pwr" onclick="pwr()" type="button" class="btn btn-primary">x<sup>y</sup></button>
         <button id = "clr" onclick="clr()" type="button" class="btn btn-primary">C</button>   
-    </div><br>
+    </div>
 
     <div class="d-flex justify-content-center">
     <div class="w-25 p-3">
-       B<input type="number" id = "dato2" class="form-control"> 
+        B <input type="number" id = "dato2" class="form-control" value = 0 onclick = "this.select()"> 
     </div>
     </div>
     <div class="d-flex justify-content-center">
@@ -39,6 +39,11 @@
     </table>    
     </div>
     </div>
+    <div class="d-flex justify-content-center">
+        <button id = "insa" onclick="insA()" type="button" class="btn btn-primary">Insert on A</button> 
+        <button id = "insb" onclick="insB()" type="button" class="btn btn-primary">Insert on B</button>
+    </div> 
+
     <script src="calc.js"></script>
 </body>
 <style>

@@ -6,9 +6,11 @@ var numberElement2 = document.getElementById("dato2");
 
 function clean(){
     numberElement.focus();
-    numberElement.value = '';
+    numberElement.value = 0;
     numberElement2.focus();
-    numberElement2.value = '';
+    numberElement2.value = 0;
+  
+    numberElement.focus();
 }
 function add(){
     var result = 0;
@@ -90,10 +92,17 @@ function rot(){
 
 function clr(){
     numberElement.focus();
-    numberElement.value = '';
+    numberElement.value = 0;
     numberElement2.focus();
-    numberElement2.value = '';
+    numberElement2.value = 0;
     resultElement.rows[0].cells.item(0).innerHTML = 0;
     numberElement.focus();
 }
-
+ function insA(){
+     var res = resultElement.rows[0].cells.item(0).innerHTML;
+     numberElement.value = res;
+ }
+ function insB(){
+    var res = resultElement.rows[0].cells.item(0).innerHTML
+    numberElement2.value = res;
+}
